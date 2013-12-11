@@ -1,0 +1,10 @@
+@import '_globals';
+
+body {
+  color: $black;
+}
+
+.bodyContainer{
+	width: $containerWidth;
+	margin: 0 auto;
+}

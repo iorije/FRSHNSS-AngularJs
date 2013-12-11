@@ -1,0 +1,10 @@
+[
+	{
+		"linkName": "Home",
+		"url": "home"		
+	},
+	{
+		"linkName": "Calendar",
+		"url": "calendar"		
+	}
+]

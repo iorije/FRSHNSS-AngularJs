@@ -1,0 +1,12 @@
+<h1>{{data.title}}</h1>
+<ul>
+	<li ng-repeat="event in events.items">
+		{{event.summary}}<br />
+		{{event.id}}<br />
+		{{event.description}}<br />
+		{{event.htmlLink}}<br />
+		{{event.location}}<br />
+		{{event.start.dateTime}}<br />
+		{{event.end.dateTime}}<br />
+	</li>
+</ul>
