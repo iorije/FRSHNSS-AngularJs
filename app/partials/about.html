@@ -1,0 +1,18 @@
+<div class="about">
+	<h1>{{data.title}}</h1>
+	<div class="staff">
+		<div class="member" ng-repeat="member in data.staff">
+			<img ng-src="img/profile.gif" alt="{{member.name}}">
+			<p>{{member.name}}</p>
+			<p>{{member.titles}}</p>
+			<p>{{member.email}}</p>
+		</div>
+	</div>
+</div>
+
+<!-- <p ng-repeat="member in data.staff">
+	<input type="text" ng-model="member.name">
+	<input type="text" ng-model="member.titles">
+	<input type="text" ng-model="member.email">
+</p>
+<input type="submit" ng-click="save()"> -->

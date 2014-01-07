@@ -4,6 +4,7 @@ maybe later also mongoDb
 - read en write to json files
 - 2 partials with controllers
 - main index with 2 controllers (header, footer)
+- Get google calendar events
 
 
 personal notes

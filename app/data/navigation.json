@@ -6,5 +6,9 @@
 	{
 		"linkName": "Calendar",
 		"url": "calendar"		
+	},
+	{
+		"linkName": "About",
+		"url": "about"		
 	}
 ]

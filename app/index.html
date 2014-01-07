@@ -6,13 +6,13 @@
 
 	<!-- css -->
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="css/animations.css">
 	<link rel="stylesheet" type="text/css" href="css/styler.css">
 
 	<!-- js + lib -->
 	<script src="lib/angular.min.js" type="text/javascript"></script>
 	<script src="lib/angular-route.min.js" type="text/javascript"></script>
 	<script src="lib/angular-resource.min.js" type="text/javascript"></script>
+	<script src="lib/dateHelpers.js" type="text/javascript"></script>
 	<script src="js/app.js"></script>
 	<script src="js/controllers/frshnssControllers.js"></script>
 	<script src="js/controllers/templateControllers.js"></script>
@@ -28,12 +28,13 @@
 				</li>
 			</ul>
 		</div>
+
 		<div class="view-container">
 	    	<div ng-view class="view-frame"></div>
 	  	</div>
-		<div ng-controller="FooterCtrl">
-			{{name}}
-		</div>
 	</div>
+	<footer ng-controller="FooterCtrl">
+		{{name}}
+	</footer>
 </body>
 </html>

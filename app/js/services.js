@@ -5,8 +5,9 @@
 var frshnssServices = angular.module('frshnssServices', ['ngResource']);
 
 frshnssServices.factory('DataService', ['$resource',
-  function($resource){
-    return $resource('data/:fileName.json', {}, {
-      query: {method:'GET', params:{fileName:''}, isArray:true}
-    });
-  }]);
+  	function($resource){
+    	return $resource('data/:fileName.json', {}, {
+      		query: {method:'GET', params:{fileName:''}, isArray:true}
+    	});
+  	}
+]);

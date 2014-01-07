@@ -20,6 +20,10 @@ frshnss.config(['$routeProvider',
         templateUrl: 'partials/calendar.html',
         controller: 'CalendarCtrl'
       }).
+      when('/about', {
+        templateUrl: 'partials/about.html',
+        controller: 'AboutCtrl'
+      }).
       otherwise({
         redirectTo: '/home'
       });

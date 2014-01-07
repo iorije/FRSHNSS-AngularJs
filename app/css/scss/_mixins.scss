@@ -1,0 +1,21 @@
+@mixin font($name, $path) {
+    font-family: $name;
+    src: url($path+'.eot');
+    src: url($path+'.eot?#iefix') format('embedded-opentype'),
+         url($path+'.woff') format('woff'),
+         url($path+'.ttf') format('truetype'),
+         url($path+'.svg#'+$name) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin width($columns, $margin){
+	width: ($containerWidth - (((2 * $columns) - 2) * $margin)) / $columns;
+	margin: 0 $margin+px 0 $margin+px;
+	&:first-child{
+		margin-left: 0px;
+	}
+	&:last-child{
+		margin-right: 0px;
+	}
+}

@@ -1,12 +1,13 @@
-<h1>{{data.title}}</h1>
-<ul>
-	<li ng-repeat="event in events.items">
-		{{event.summary}}<br />
-		{{event.id}}<br />
-		{{event.description}}<br />
-		{{event.htmlLink}}<br />
-		{{event.location}}<br />
-		{{event.start.dateTime}}<br />
-		{{event.end.dateTime}}<br />
-	</li>
-</ul>
+<div class="calendar">
+	<h1>{{data.title}}</h1>
+	<p>This is week {{week}}</p>
+	<div class="trainings">
+		<div ng-repeat="event in events.items" class="training" id="{{event.id}}">
+			<a href="{{event.htmlLink}}">{{event.summary}}</a><br />
+			{{event.description}}<br />
+			{{event.location}}<br />
+			{{event.start.dateTime | date:'HH:mm'}} - 
+			{{event.end.dateTime | date:'HH:mm'}}<br />
+		</div>
+	</div>
+</div>
