@@ -1,4 +1,12 @@
 @font-face {
+  font-family: "open_sansbold";
+  src: url("fonts/opensans_bold/OpenSans-Bold-webfont.eot");
+  src: url("fonts/opensans_bold/OpenSans-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/opensans_bold/OpenSans-Bold-webfont.woff") format("woff"), url("fonts/opensans_bold/OpenSans-Bold-webfont.ttf") format("truetype"), url("fonts/opensans_bold/OpenSans-Bold-webfont.svg#open_sansbold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "open_sanslight";
   src: url("fonts/opensans_light/OpenSans-Light-webfont.eot");
   src: url("fonts/opensans_light/OpenSans-Light-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/opensans_light/OpenSans-Light-webfont.woff") format("woff"), url("fonts/opensans_light/OpenSans-Light-webfont.ttf") format("truetype"), url("fonts/opensans_light/OpenSans-Light-webfont.svg#open_sanslight") format("svg");
@@ -20,21 +28,57 @@ footer {
   background-color: black;
   color: white;
   height: 50px;
+  margin-top: 50px;
 }
 
+.calendar .timeline {
+  margin: 5px 0 20px 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border-bottom: 5px solid #000;
+}
+.calendar .timeline .date {
+  width: 120px;
+  margin: 0 auto;
+  padding-top: 5px;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
 .calendar .trainings {
   overflow: hidden;
 }
 .calendar .trainings .training {
   width: 320px;
   margin: 0 10px 0 10px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   float: left;
+  border: 2px solid #000;
+  font-family: 'open_sansbold';
+  font-size: 30px;
 }
 .calendar .trainings .training:first-child {
   margin-left: 0px;
 }
 .calendar .trainings .training:last-child {
   margin-right: 0px;
+}
+.calendar .trainings .training .contrast {
+  background-color: black;
+  color: white;
+}
+.calendar .trainings .training .spacer {
+  height: 30px;
+}
+.calendar .trainings .training a {
+  color: white;
+  text-decoration: none;
+}
+.calendar .trainings .training a:hover {
+  color: #bbbbbb;
 }
 
 .about .staff {

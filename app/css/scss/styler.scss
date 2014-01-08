@@ -16,15 +16,46 @@ footer{
 	background-color: $ftrBgColor;
 	color: $ftrColor;
 	height: 50px;
+	margin-top: 50px;
 }
 
 
 .calendar{
+	.timeline{
+		margin: 5px 0 20px 0;
+		@include borderBox;
+		border-bottom: 5px solid #000;
+		.date{
+			width: 120px;
+			margin: 0 auto;
+			padding-top: 5px;
+			text-align: center;
+			@include contrast1;
+		}
+	}
 	.trainings{
 		overflow: hidden; //clearing floats
 		.training{
 			@include width(3, 10);
+			@include borderBox;
 			float: left;
+			border: 2px solid #000;
+			font-family: 'open_sansbold';
+			font-size: 30px;
+			.contrast{
+				background-color: $contrast1;
+				color: $colorContrast1;
+			}
+			.spacer{
+				height: 30px;
+			}
+			a{
+				color: $linkColor;
+				text-decoration: none;
+				&:hover{
+					color: $linkColorHover;
+				}
+			}
 		}
 	}
 }

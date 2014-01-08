@@ -6,7 +6,8 @@ var frshnss = angular.module('frshnss', [
   'ngRoute',
   'frshnssControllers',
   'templateControllers',
-  'frshnssServices'
+  'frshnssServices',
+  'frshnssFilters'
 ]);
 
 frshnss.config(['$routeProvider',
