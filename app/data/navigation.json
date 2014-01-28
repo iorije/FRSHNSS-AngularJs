@@ -4,8 +4,8 @@
 		"url": "home"		
 	},
 	{
-		"linkName": "Calendar",
-		"url": "calendar"		
+		"linkName": "Blog",
+		"url": "#blog"		
 	},
 	{
 		"linkName": "About",

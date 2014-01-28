@@ -2,7 +2,7 @@
 	"title": "KALENDER",
 	"trainings":{
 		"title": "TRAINING",
-		"subtitle": "OPEN & FREE FOR EVERYONE VERSE HIPHOP & £BREAKBEATS",
+		"subtitle": "OPEN & FREE FOR EVERYONE VERSE HIPHOP & BREAKBEATS",
 		"training": [
 			{
 				"day": "MAANDAG",
@@ -19,7 +19,7 @@
 			{
 				"day": "ZATERDAG",
 				"start": "18h00",
-				"end": "23h59",
+				"end": "23h00",
 				"locatie": "GENK"
 			}
 		]

@@ -1,15 +1,22 @@
 // body settings
-$containerWidth: 		1000px;
+$containerWidth: 		960px;
 
 // colors
-$black: 				#000;
+$black: 				#111111;
+$red: 					#A40200;
+$white: 				#ffffff;
 
-$contrast1: 			#000;
-$colorContrast1: 		#fff;
+// contrasten
+$bg1: 		 			$black;
+$color1: 				$white;
 
-$linkColor: 			#fff;
-$linkColorHover: 		#bbb;
+$bg2: 					$red;
+$color2: 				$white;
+
+// linkcolors
+$linkColor: 			$white;
+$linkColorHover: 		#bbbbbb;
 
 // footer
 $ftrBgColor: 			$black;
-$ftrColor: 				#fff;
+$ftrColor: 				$white;

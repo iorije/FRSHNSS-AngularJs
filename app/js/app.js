@@ -17,10 +17,6 @@ frshnss.config(['$routeProvider',
         templateUrl: 'partials/home.html',
         controller: 'HomeCtrl'
       }).
-      when('/calendar', {
-        templateUrl: 'partials/calendar.html',
-        controller: 'CalendarCtrl'
-      }).
       when('/about', {
         templateUrl: 'partials/about.html',
         controller: 'AboutCtrl'

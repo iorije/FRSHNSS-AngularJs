@@ -14,49 +14,69 @@
   font-style: normal;
 }
 
+.baseTriangle, .about .qanda .triangle {
+  height: 0px;
+  width: 0px;
+}
+
+.conversationBalloon, .about .qanda p {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  padding: 10px 20px 10px 20px;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 body {
-  color: black;
+  color: #111111;
+  font-size: 16px;
   font-family: 'open_sanslight';
 }
 
 .bodyContainer {
-  width: 1000px;
+  width: 960px;
   margin: 0 auto;
 }
 
 footer {
-  background-color: black;
+  background-color: #111111;
   color: white;
   height: 50px;
   margin-top: 50px;
 }
 
+.divider {
+  background-color: #111111;
+  height: 10px;
+  width: 100%;
+}
+
 .calendar .timeline {
   margin: 5px 0 20px 0;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  border-bottom: 5px solid #000;
+  border-bottom: 5px solid #111111;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
 }
 .calendar .timeline .date {
   width: 120px;
   margin: 0 auto;
   padding-top: 5px;
   text-align: center;
-  background-color: black;
+  background-color: #111111;
   color: white;
 }
 .calendar .trainings {
   overflow: hidden;
 }
 .calendar .trainings .training {
-  width: 320px;
+  width: 306.66667px;
   margin: 0 10px 0 10px;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   float: left;
-  border: 2px solid #000;
   font-family: 'open_sansbold';
   font-size: 30px;
 }
@@ -66,12 +86,35 @@ footer {
 .calendar .trainings .training:last-child {
   margin-right: 0px;
 }
-.calendar .trainings .training .contrast {
-  background-color: black;
-  color: white;
-}
 .calendar .trainings .training .spacer {
+  width: 299.66667px;
+  border: 2px solid #111111;
+  border-bottom: 0px;
   height: 30px;
+}
+.calendar .trainings .training .contrast {
+  background-color: #111111;
+  color: white;
+  width: 299.66667px;
+  -webkit-box-shadow: 0px 5px 13px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 5px 13px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 5px 13px 0px rgba(0, 0, 0, 0.3);
+}
+.calendar .trainings .training .contrast:after {
+  content: "";
+  width: 0px;
+  height: 89px;
+  border-bottom: 7px solid transparent;
+  border-left: 7px solid #111111;
+  position: relative;
+  float: right;
+  right: -7px;
+  top: -41px;
+}
+.calendar .trainings .training .content {
+  width: 299.66667px;
+  border: 2px solid #111111;
+  border-top: 0px;
 }
 .calendar .trainings .training a {
   color: white;
@@ -81,11 +124,47 @@ footer {
   color: #bbbbbb;
 }
 
+.about .qanda {
+  line-height: 28px;
+  overflow: auto;
+  margin-bottom: 20px;
+}
+.about .qanda .q {
+  margin-bottom: 25px;
+}
+.about .qanda .q p {
+  background-color: #111111;
+  color: white;
+}
+.about .qanda .q .triangle {
+  float: left;
+  border-top: 10px solid #111111;
+}
+.about .qanda .a {
+  text-align: right;
+  margin-bottom: 25px;
+}
+.about .qanda .a p {
+  background-color: #a40200;
+  color: white;
+}
+.about .qanda .a .triangle {
+  float: right;
+  border-top: 10px solid #a40200;
+}
+.about .qanda p {
+  margin-bottom: 0px;
+}
+.about .qanda .triangle {
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  margin: 0 20px 0 20px;
+}
 .about .staff {
   overflow: auto;
 }
 .about .staff .member {
-  width: 235px;
+  width: 225px;
   margin: 0 10px 0 10px;
   float: left;
 }
@@ -96,7 +175,7 @@ footer {
   margin-right: 0px;
 }
 .about .staff .member p {
-  background-color: black;
+  background-color: #111111;
   color: white;
   margin-bottom: 2px;
   margin-top: 2px;

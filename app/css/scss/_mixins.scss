@@ -9,7 +9,7 @@
     font-style: normal;
 }
 
-@mixin width($columns, $margin){
+@mixin columnWidthAndSettings($columns, $margin){
 	width: ($containerWidth - (((2 * $columns) - 2) * $margin)) / $columns;
 	margin: 0 $margin+px 0 $margin+px;
 	&:first-child{
@@ -20,13 +20,22 @@
 	}
 }
 
-@mixin borderBox{
-	box-sizing:border-box;
-	-moz-box-sizing:border-box;
-	-webkit-box-sizing:border-box;
+@mixin width($columns, $margin, $space){
+	width: (($containerWidth - (((2 * $columns) - 2) * $margin)) / $columns) - $space;
 }
 
 @mixin contrast1{
-	background-color: $contrast1;
-	color: $colorContrast1;
+	background-color: $bg1;
+	color: $color1;
+}
+
+@mixin contrast2{
+	background-color: $bg2;
+	color: $color2;
+}
+
+@mixin borderRadius($radius){
+	-webkit-border-radius: $radius+px;
+	-moz-border-radius: $radius+px;
+	border-radius: $radius+px;
 }
