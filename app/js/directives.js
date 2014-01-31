@@ -43,8 +43,13 @@ frshnss.directive('ngBlog', function(){
     restrict: 'A',
     scope: true,
     templateUrl: 'partials/blog.html',
-    controller: ['$scope', '$http', function($scope, $http){
+    controller: ['$scope', '$http', 'DataService', function($scope, $http, DataService){
+      $scope.data = DataService.get({fileName: 'blogposts'});
       $scope.title = 'BLOG';
+      $scope.save = function() {
+        $scope.data.posts.push($scope.post);
+        $http.post('data/blogposts.json', $scope.data);
+      };
     }]
   }
 });
